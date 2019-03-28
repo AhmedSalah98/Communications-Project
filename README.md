@@ -48,8 +48,10 @@ QAM is a method of combining two amplitude-modulated (AM) signals into a single 
 5. Set intial seed to 67 for the AWGN Channel.
 6. Set output data to Port for Error Rate Calculation.
 7. Special Parameters: 
-  * BPSK : Set M-ary number to 2 for the Integer Generator and Phase offset to 0 for the modulator and demodulator
-  * QPSK : Set M-ary number to 4 for the Integer Generator and Phase offset to pi/4 for the modulator and demodulator
-  *TODO: Other Special parameters*
+  * BPSK : Set M-ary number to 2 for the Integer Generator and Phase offset to 0 for the modulator and demodulator.
+  * QPSK : Set M-ary number to 4 for the Integer Generator and Phase offset to pi/4 for the modulator and demodulator.
+  * FSK : Set M-ary number to 2 for the Integer Generator and the FSK modulator and demodulator.
+  * QAM 16 : Set M-ary number to 16 for the Integer Generator and the FSK modulator and demodulator and set Normalization method to                  Average Power.
+  * QAM 64 : Set M-ary number to 64 for the Integer Generator and the FSK modulator and demodulator and set Normalization method to                  Average Power.
 8. press run to reproduce the scatter plot figures.
 9. To reproduce the BER figure enter the command "bertool" then press "plot" to plot the exact figure then press "Monte Carlo" tab and      enter the range [-10, 10], the path to slx file and variable name then press "Run".
