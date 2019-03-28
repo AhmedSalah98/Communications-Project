@@ -40,4 +40,16 @@ QAM is a method of combining two amplitude-modulated (AM) signals into a single 
 * Scatter plot after noise :
 * BER figure :
 
-* TODO : Figures *
+# General instructions to reproduce figures:
+1. Start Matlab then create a new Simulink model.
+2. Open the Simulink library browser then drag and drop blocks and connect them (as shown in Scheme Diagrams of each modulation scheme).
+3. Set number of frames to 10000 
+4. Set Sample time to 1 and Samples per frame to 100 and intial seed to 37 for the Random Integers Generator.
+5. Set intial seed to 67 for the AWGN Channel.
+6. Set output data to Port for Error Rate Calculation.
+7. Special Parameters: 
+  * BPSK : Set M-ary number to 2 for the Integer Generator and Phase offset to 0 for the modulator and demodulator
+  * QPSK : Set M-ary number to 4 for the Integer Generator and Phase offset to pi/4 for the modulator and demodulator
+  *TODO: Other Special parameters*
+8. press run to reproduce the scatter plot figures.
+9. To reproduce the BER figure enter the command "bertool" then press "plot" to plot the exact figure then press "Monte Carlo" tab and      enter the range [-10, 10], the path to slx file and variable name then press "Run".
